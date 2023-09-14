@@ -139,3 +139,14 @@ form button:hover {
 form button:active {
   transform: scale(0.95);
 }
+
+.copy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copy p{
+  color: #fff;
+  font-size: 1em;
+  border-bottom: 0.2em solid #a16574;
+}
