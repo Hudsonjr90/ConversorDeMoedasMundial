@@ -21,7 +21,7 @@ for (let i = 0; i < dropList.length; i++) {
         ? currency_code == "USD"
           ? "selected"
           : ""
-        : currency_code == "INR"
+        : currency_code == "BRL"
         ? "selected"
         : "";
     let optionTag = `<option value="${currency_code}" ${selected}>${currency_code}</option>`;
@@ -80,6 +80,6 @@ function getExchangeRate() {
       exchangeRateTxt.innerText = `${amountVal} ${fromCurrency.value} = ${totalExRate} ${toCurrency.value}`;
     })
     .catch(() => {
-      exchangeRateTxt.innerText = "Something went wrong";
+      exchangeRateTxt.innerText = "Algo deu errado";
     });
 }
