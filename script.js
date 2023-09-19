@@ -1,10 +1,10 @@
 let country_list = {
+  
+  ARS: "AR",
   BRL: "BR",
   EUR: "EU",
-  USD: "US",
-  ARS: "AR",
-  GBP: "GB"
-
+  GBP: "GB",
+  USD: "US"
 };
 
 let apiKey = "01213a023216b452de677888";
