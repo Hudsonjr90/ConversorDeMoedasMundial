@@ -1,8 +1,12 @@
+html {
+  font-size: 16px; /* Definindo um valor base para rem (geralmente 16px) */
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "baloo 2", sans-serif;
 }
 
 body {
@@ -10,123 +14,119 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 0 10px;
+  padding: 0 0.625rem; /* 10px em rem */
   background: linear-gradient(180deg, #fff 50%, #a16574 50%);
 }
 
-::selection {
-  color: #000;
-  background: #fff;
-}
-
 .wrapper {
-  width: 370px;
-  padding: 30px;
-  border-radius: 5px;
+  width: 100%; /* Mudança para ocupar 100% da largura da tela */
+  max-width: 23.125rem; /* 370px em rem */
+  padding: 1.875rem; /* 30px em rem */
+  border-radius: 0.3125rem; /* 5px em rem */
   background: #222;
-  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.4375rem 0.4375rem 1.25rem rgba(0, 0, 0, 0.2); /* 7px 7px 20px em rem */
   color: #fff;
 }
 
 .wrapper header {
-  font-size: 28px;
-  font-weight: 500;
+  font-size: 1.9375rem; /* 31px em rem */
+  font-weight: 700;
   text-align: center;
 }
 
 .wrapper form {
-  margin: 40px 0 20px 0;
+  margin: 2.5rem 0 1.25rem 0; /* 40px 0 20px em rem */
 }
 
 form :where(input, select, button) {
   width: 100%;
   outline: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem; /* 5px em rem */
   border: none;
   background: #444;
   color: #fff;
 }
 
 form p {
-  font-size: 18px;
-  margin-bottom: 5px;
+  font-size: 1.125rem; /* 18px em rem */
+  margin-bottom: 0.3125rem; /* 5px em rem */
 }
 
 form input {
-  height: 50px;
-  font-size: 17px;
-  padding: 0 15px;
-  border: 1px solid #999;
+  height: 3.125rem; /* 50px em rem */
+  font-size: 1.0625rem; /* 17px em rem */
+  padding: 0 0.9375rem; /* 15px em rem */
+  border: 0.0625rem solid #999; /* 1px em rem */
   background: #555;
 }
 
 form input:focus {
-  padding: 0 14px;
-  border: 2px solid #675afe;
+  padding: 0 0.875rem; /* 14px em rem */
+  border: 0.125rem solid #675afe; /* 2px em rem */
   background: #555;
 }
 
 form .drop-list {
   display: flex;
-  margin-top: 20px;
+  margin-top: 1.25rem; /* 20px em rem */
   align-items: center;
   justify-content: space-between;
 }
 
 .drop-list .select-box {
   display: flex;
-  width: 115px;
-  height: 45px;
+  width: 7.1875rem; /* 115px em rem */
+  height: 2.8125rem; /* 45px em rem */
   align-items: center;
-  border-radius: 5px;
+  border-radius: 0.3125rem; /* 5px em rem */
   justify-content: center;
-  border: 1px solid #999;
+  border: 0.0625rem solid #999; /* 1px em rem */
   background: #fff;
   color: #000;
 }
 
 .select-box img {
-  max-width: 21px;
+  max-width: 1.3125rem; /* 21px em rem */
 }
 
 .select-box select {
   width: auto;
-  font-size: 16px;
+  font-size: 1rem; /* 16px em rem */
   background: none;
-  margin: 0 -5px 0 5px;
+  margin: 0 -0.3125rem 0 0.3125rem; /* 5px em rem */
   color: #000;
 }
 
-.select-box select::-webkit-scrollbar {
-  width: 8px;
+select::-webkit-scrollbar {
+  width: 0.5rem; /* 8px em rem */
 }
 
-.select-box select::-webkit-scrollbar-track {
+select::-webkit-scrollbar-track {
   background: #fff;
 }
 
-.select-box select::-webkit-scrollbar-thumb {
+select::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 8px;
-  border-right: 2px solid #ffffff;
+  border-radius: 0.5rem; /* 8px em rem */
+  border-right: 0.125rem solid #ffffff; /* 2px em rem */
 }
 
 .drop-list .icon {
   cursor: pointer;
-  margin-top: 30px;
-  font-size: 22px;
+  margin-top: 1.875rem; /* 30px em rem */
+  font-size: 1.375rem; /* 22px em rem */
   color: #fff;
 }
 
 form .exchange-rate {
-  font-size: 17px;
-  margin: 20px 0 30px;
+  font-size: 1.0625rem; /* 17px em rem */
+  margin: 1.25rem 0 1.875rem; /* 20px 0 30px em rem */
 }
 
 form button {
-  height: 52px;
+  height: 3.25rem; /* 52px em rem */
   color: #fff;
-  font-size: 17px;
+  font-size: 1.0625rem; /* 17px em rem */
   cursor: pointer;
   background: #444;
   transition: background 0.3s ease, transform 0.2s ease;
@@ -140,13 +140,29 @@ form button:active {
   transform: scale(0.95);
 }
 
-.copy{
+.copy {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.copy p{
+.copy p {
   color: #fff;
-  font-size: 1em;
-  border-bottom: 0.2em solid #a16574;
+  font-size: 1rem; /* 1em em rem */
+  border-bottom: 0.0125rem solid #a16574; /* 0.2em em rem */
+}
+
+::selection {
+  color: #000;
+  background: #fff;
+}
+
+/* Media Query para dispositivos com largura de tela menor que 768px */
+@media (max-width: 768px) {
+  body {
+    padding: 1.25rem; /* 20px em rem */
+  }
+
+  .wrapper {
+    padding: 1.25rem; /* 20px em rem */
+  }
 }
